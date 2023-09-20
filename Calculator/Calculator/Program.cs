@@ -36,8 +36,89 @@ namespace Calculator
              *       - https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-while-statement
              * 3) Umozni uzivateli zadavat i desetinna cisla, tedy prekopej kalkulacku tak, aby umela pracovat s floaty
              */
+            
+            Console.WriteLine("Napiš číslo");
+            string hodnota1;
+            int cislo1;
+            while (true)
+            {
+                hodnota1 = Console.ReadLine();
+                if (int.TryParse(hodnota1, out int check) == true) //Vyzkousi jestli je to int/cislo
+                {
+                    cislo1 = int.Parse(hodnota1);
+                    break; //jinak pise do nekonecna
 
-            //Tento komentar smaz a misto nej zacni psat svuj prdacky kod.
+                }
+                else { Console.WriteLine("Číslo lopato"); }
+            }        
+            
+            
+            Console.WriteLine("Napiš další číslo");
+            string hodnota2;
+            int cislo2;
+            while (true)
+            {
+                hodnota2 = Console.ReadLine();
+                if (int.TryParse(hodnota2, out int check) == true)
+                {
+                    cislo2 = int.Parse(hodnota2);
+                    break; 
+
+                }
+                else { Console.WriteLine("Tak máš lobotomii či co"); }
+            }
+            Console.WriteLine("Teď napiš znaménko pro operaci (+ - * /)");   
+            
+
+            int result = 0;
+
+            List<string> list = new List<string>();
+            list.Add("+");
+            list.Add("-");
+            list.Add("*");
+            list.Add("/");
+            while (true) 
+            {
+                string operace = Console.ReadLine();
+                if (list.Contains(operace) == false)
+                {
+                    Console.WriteLine("Běž radši hrát wotko");  
+                }
+                    
+                if (list.Contains(operace) == true)
+                {
+                    if (operace == "+")
+                        result = (cislo1 + cislo2);
+
+
+
+                    if (operace == "-")
+                        result = (cislo1 - cislo2);
+
+
+                    if (operace == "*")
+                        result = (cislo1 * cislo2);
+
+
+
+                    if (operace == "/")
+                        result = (cislo1 / cislo2);
+
+                    Console.WriteLine("Výsledek je " + result);
+
+
+
+                }
+
+            }
+            
+                
+           
+
+
+            
+
+
 
             Console.ReadKey(); //Toto nech jako posledni radek, aby se program neukoncil ihned, ale cekal na stisk klavesy od uzivatele.
         }
