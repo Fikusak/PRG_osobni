@@ -39,29 +39,28 @@ namespace Calculator
             
             Console.WriteLine("Napiš číslo");
             string hodnota1;
-            int cislo1;
+            float cislo1;
             while (true)
             {
                 hodnota1 = Console.ReadLine();
-                if (int.TryParse(hodnota1, out int check) == true) //Vyzkousi jestli je to int/cislo
+                if (float.TryParse(hodnota1, out float check) == true) //Vyzkousi jestli je to int/cislo
                 {
-                    cislo1 = int.Parse(hodnota1);
+                    cislo1 = float.Parse(hodnota1);
                     break; //jinak pise do nekonecna
 
                 }
                 else { Console.WriteLine("Číslo lopato"); }
             }        
-            
-            
+                      
             Console.WriteLine("Napiš další číslo");
             string hodnota2;
-            int cislo2;
+            float cislo2;
             while (true)
             {
                 hodnota2 = Console.ReadLine();
-                if (int.TryParse(hodnota2, out int check) == true)
+                if (float.TryParse(hodnota2, out float check) == true)
                 {
-                    cislo2 = int.Parse(hodnota2);
+                    cislo2 = float.Parse(hodnota2);
                     break; 
 
                 }
@@ -69,14 +68,9 @@ namespace Calculator
             }
             Console.WriteLine("Teď napiš znaménko pro operaci (+ - * /)");   
             
+            float result = 0;
 
-            int result = 0;
-
-            List<string> list = new List<string>();
-            list.Add("+");
-            list.Add("-");
-            list.Add("*");
-            list.Add("/");
+            List<string> list = new List<string>() {"+", "-", "*", "/" };
             while (true) 
             {
                 string operace = Console.ReadLine();
@@ -89,37 +83,16 @@ namespace Calculator
                 {
                     if (operace == "+")
                         result = (cislo1 + cislo2);
-
-
-
                     if (operace == "-")
                         result = (cislo1 - cislo2);
-
-
                     if (operace == "*")
                         result = (cislo1 * cislo2);
-
-
-
                     if (operace == "/")
                         result = (cislo1 / cislo2);
 
                     Console.WriteLine("Výsledek je " + result);
-
-
-
                 }
-
             }
-            
-                
-           
-
-
-            
-
-
-
             Console.ReadKey(); //Toto nech jako posledni radek, aby se program neukoncil ihned, ale cekal na stisk klavesy od uzivatele.
         }
     }
