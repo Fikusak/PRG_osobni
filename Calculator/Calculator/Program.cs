@@ -66,11 +66,11 @@ namespace Calculator
                 }
                 else { Console.WriteLine("Tak máš lobotomii či co"); }
             }
-            Console.WriteLine("Teď napiš znaménko pro operaci (+ - * /)");   
+            Console.WriteLine("Teď napiš znaménko pro operaci (+ - * / ^)");   
             
             float result = 0;
 
-            List<string> list = new List<string>() {"+", "-", "*", "/" };
+            List<string> list = new List<string>() {"+", "-", "*", "/", "^" };
             while (true) 
             {
                 string operace = Console.ReadLine();
@@ -89,6 +89,8 @@ namespace Calculator
                         result = (cislo1 * cislo2);
                     if (operace == "/")
                         result = (cislo1 / cislo2);
+                    if (operace == "^")
+                        result = ((int)Math.Pow(cislo1, cislo2));
 
                     Console.WriteLine("Výsledek je " + result);
                 }
