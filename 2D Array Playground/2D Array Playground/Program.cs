@@ -35,12 +35,16 @@ namespace _2D_Array_Playground
             int nRow = 1;
             for (int i = 0; j = myArray.GetLength(1); j++)
             {
-                Console.WriteLine(myArray[nRow, j] + " ");
+                Console.Write(myArray[nRow, j] + " ");
             }
             Console.WriteLine("\n");
             //TODO 3: Vypiš do konzole n-tý sloupec pole, kde n určuje proměnná nColumn.
-            int nColumn = 0;
-
+            int nColumn = 3;
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                Console.Write(myArray[i, nColumn] + " ");
+            }
+            Console.WriteLine("\n");
             //TODO 4: Prohoď prvek na souřadnicích [xFirst, yFirst] s prvkem na souřadnicích [xSecond, ySecond] a vypiš celé pole do konzole po prohození.
             //Nápověda: Budeš potřebovat proměnnou navíc, do které si uložíš první z prvků před tím, než ho přepíšeš druhým, abys hodnotou prvního prvku potom mohl přepsat druhý
             int xFirst = 0;
@@ -48,7 +52,8 @@ namespace _2D_Array_Playground
             int xSecond = 4; 
             int ySecond = 4;
 
-            int temporary = myArray
+            int temporary = myArray[xFirst, yFirst];
+            myArray[xFirst, yFirst] = myArray[xSecond, ySecond];
 
             //TODO 5: Prohoď n-tý řádek v poli s m-tým řádkem (n je dáno proměnnou nRowSwap, m mRowSwap) a vypiš celé pole do konzole po prohození.
             int nRowSwap = 0;
