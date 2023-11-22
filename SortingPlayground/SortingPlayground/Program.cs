@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,8 +18,24 @@ namespace SortingPlayground
 
         static int[] BubbleSort(int[] array)
         {
-            int[] sortedArray = (int[])array.Clone(); // Řaď v tomto poli, ve kterém je výchoze zkopírováno všechno ze vstupního pole.
+            int[] sortedArray = (int[])array.Clone(); // Řaď v tomto poli, ve kterém je výchoze zkopírováno všechno ze vstupního pole.  
+            int temp, n;
+            n = sortedArray.Length;
+            for (int i = 0; i < n; i++)
+            {
+               
+                for (int j = 0; j < n - 1; j++)
+                {
+                    if (sortedArray[j]>sortedArray[j+1])
+                    {
+                        temp = sortedArray[j];
+                        sortedArray[j] = sortedArray[j+1];
+                        sortedArray[j+1] = temp;
+                    }
+                }
+            }
             
+
             /*
              * TODO: Naimplementuj bubble sort.
              */
@@ -28,6 +45,22 @@ namespace SortingPlayground
         static int[] SelectionSort(int[] array)
         {
             int[] sortedArray = (int[])array.Clone(); // Řaď v tomto poli, ve kterém je výchoze zkopírováno všechno ze vstupního pole.
+            int n = sortedArray.Length;
+            for (int i = 0; i < n-1; i++)
+            {
+                int min = i;
+                for (int j = i+1;j < n; j++)
+                {
+                    if (sortedArray[j] < sortedArray[min])
+                        min = j;
+                }
+                int temp = sortedArray[min];
+                sortedArray[min] = sortedArray[i];
+                sortedArray[i] = temp;
+
+            }  
+            
+            
             /*
              * TODO: Naimplementuj selection sort.
              */
@@ -37,6 +70,17 @@ namespace SortingPlayground
         static int[] InsertionSort(int[] array)
         {
             int[] sortedArray = (int[])array.Clone(); // Řaď v tomto poli, ve kterém je výchoze zkopírováno všechno ze vstupního pole.
+            int n = sortedArray.Length;
+            for (int i = 1; i < n; i++)
+            {
+                int z = sortedArray[i];
+                int j = i-1;
+                while (j >= 0 && sortedArray[j] > z)
+                {
+                    sortedArray[j] = sortedArray[i];
+                    
+                }
+            }
             /*
              * TODO: Naimplementuj insertion sort.
              */
@@ -96,13 +140,13 @@ namespace SortingPlayground
 
             int[] largeArray = new int[1000];
             FillArray(largeArray);
-
+            
             WriteArrayToConsole(smallArray, "Malé pole");
             SortArray(smallArray, "Malé pole");
-
+            
             WriteArrayToConsole(mediumArray, "Střední pole");
             SortArray(mediumArray, "Střední pole");
-
+            
             //WriteArrayToConsole(largeArray, "Velké pole");
             //SortArray(largeArray, "Velké pole");
 
