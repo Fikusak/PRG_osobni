@@ -1,0 +1,7 @@
+G:\_PRG\PRG_osobni\2D Array Playground\2D Array Playground\bin\Debug\2D Array Playground.exe.config
+G:\_PRG\PRG_osobni\2D Array Playground\2D Array Playground\bin\Debug\2D Array Playground.exe
+G:\_PRG\PRG_osobni\2D Array Playground\2D Array Playground\bin\Debug\2D Array Playground.pdb
+G:\_PRG\PRG_osobni\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.csproj.AssemblyReference.cache
+G:\_PRG\PRG_osobni\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.csproj.CoreCompileInputs.cache
+G:\_PRG\PRG_osobni\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.exe
+G:\_PRG\PRG_osobni\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.pdb
