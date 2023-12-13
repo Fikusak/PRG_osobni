@@ -69,9 +69,16 @@ namespace ClassPlayground
             Rectangle rectangle = new Rectangle(5, 8);
             rectangle.CalculateArea();
             rectangle.CalculateAspectRatio();
-            rectangle.ContainsPoint(1, 3); 
+            rectangle.ContainsPoint(1, 3);
+
+            BankAccount bankAccount = new BankAccount(1111, "Rastislav", "Koruna", 1000);
+            bankAccount.Deposit(600);
+            bankAccount.Withdraw(100);
+
+
 
             Console.ReadKey();
         }
     }
 }
+
