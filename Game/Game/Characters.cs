@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Game
@@ -18,6 +19,7 @@ namespace Game
             this.Chealth = Chealth;
             this.Cstrength = Cstrenght;
         }
+        
     }
 
 }
