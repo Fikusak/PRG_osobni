@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    internal class Enemies
+    public class Enemies
     {
         public string Ename;
         public int Ehealth;

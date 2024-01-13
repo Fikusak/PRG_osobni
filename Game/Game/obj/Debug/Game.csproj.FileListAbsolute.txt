@@ -1,0 +1,7 @@
+G:\_PRG\PRG_osobni\Game\Game\bin\Debug\Game.exe.config
+G:\_PRG\PRG_osobni\Game\Game\bin\Debug\Game.exe
+G:\_PRG\PRG_osobni\Game\Game\bin\Debug\Game.pdb
+G:\_PRG\PRG_osobni\Game\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+G:\_PRG\PRG_osobni\Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+G:\_PRG\PRG_osobni\Game\Game\obj\Debug\Game.exe
+G:\_PRG\PRG_osobni\Game\Game\obj\Debug\Game.pdb
