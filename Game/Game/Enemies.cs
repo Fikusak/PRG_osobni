@@ -10,8 +10,13 @@ namespace Game
     {
         public string Ename;
         public int Ehealth;
+<<<<<<< HEAD
         public int Estrength;
 
+=======
+        public int Estrength;
+        
+>>>>>>> b3b5376b181df0d53ca50bda4393d6ffbfda549a
         public Enemies(string Ename, int Ehealth, int Estrength)
         {
             this.Ename = Ename;
