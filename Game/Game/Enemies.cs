@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    internal class Enemies
+    public class Enemies
     {
         public string Ename;
         public int Ehealth;
         public int Estrength;
-        
+
         public Enemies(string Ename, int Ehealth, int Estrength)
-        { 
+        {
             this.Ename = Ename;
             this.Ehealth = Ehealth;
             this.Estrength = Estrength;
