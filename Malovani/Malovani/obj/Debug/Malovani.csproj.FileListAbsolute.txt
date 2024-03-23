@@ -1,0 +1,10 @@
+G:\_PRG\PRG_osobni\Malovani\Malovani\bin\Debug\Malovani.exe.config
+G:\_PRG\PRG_osobni\Malovani\Malovani\bin\Debug\Malovani.exe
+G:\_PRG\PRG_osobni\Malovani\Malovani\bin\Debug\Malovani.pdb
+G:\_PRG\PRG_osobni\Malovani\Malovani\obj\Debug\Malovani.csproj.AssemblyReference.cache
+G:\_PRG\PRG_osobni\Malovani\Malovani\obj\Debug\Malovani.Form1.resources
+G:\_PRG\PRG_osobni\Malovani\Malovani\obj\Debug\Malovani.Properties.Resources.resources
+G:\_PRG\PRG_osobni\Malovani\Malovani\obj\Debug\Malovani.csproj.GenerateResource.cache
+G:\_PRG\PRG_osobni\Malovani\Malovani\obj\Debug\Malovani.csproj.CoreCompileInputs.cache
+G:\_PRG\PRG_osobni\Malovani\Malovani\obj\Debug\Malovani.exe
+G:\_PRG\PRG_osobni\Malovani\Malovani\obj\Debug\Malovani.pdb
